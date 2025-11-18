@@ -21,7 +21,7 @@ export function BookingWidget({ adults, setAdults, children, setChildren, date, 
   const totalPrice = TOUR_DATA.price * adults + (TOUR_DATA.price * 0.7 * children);
 
   return (
-    <Card className="p-6 sticky top-6 shadow-xl">
+    <Card className="p-6 shadow-xl max-w-4xl">
       <div className="mb-6">
         <div className="flex items-baseline gap-2 mb-2">
           <span className="text-4xl font-bold text-primary">{totalPrice.toLocaleString()} ₽</span>

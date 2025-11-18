@@ -19,12 +19,8 @@ export default function Index() {
         setIsGalleryOpen={setIsGalleryOpen}
       />
 
-      <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
-        <div className="md:col-span-2">
-          <TourContent />
-        </div>
-
-        <div className="md:col-span-1">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="mb-12">
           <BookingWidget 
             adults={adults}
             setAdults={setAdults}
@@ -34,6 +30,8 @@ export default function Index() {
             setDate={setDate}
           />
         </div>
+        
+        <TourContent />
       </div>
     </div>
   );
